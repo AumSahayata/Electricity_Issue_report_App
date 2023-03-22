@@ -58,5 +58,13 @@
         android:background="@drawable/curve_corner_button_bg"
         android:backgroundTint="#6AABD2"
         android:layout_marginTop="100dp"/>
+    <TextView
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newuser"
+        android:text="New User?"
+        android:textColor="#6AABD2"
 
 </LinearLayout>

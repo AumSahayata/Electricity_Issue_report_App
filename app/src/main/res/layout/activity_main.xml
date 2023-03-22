@@ -7,45 +7,36 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/sideLamppost">
+    android:background="@drawable/sidelamppost">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        >
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:id="@+id/mobilenum"
-            android:background="@drawable/curve_corner_bg"
+            android:background="@drawable/curve_corner_text_bg"
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
+            android:padding="15dp"
             android:hint="Mobile Number"
             android:textSize="25sp"
             android:textStyle="bold"
+            android:textColorHint="#4C4C4C"
+            android:maxLength="10"
             android:textColor="@color/black"
             />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        >
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:id="@+id/password"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:background="@drawable/curve_corner_bg"
+            android:background="@drawable/curve_corner_text_bg"
             android:textSize="25sp"
+            android:textColorHint="#4C4C4C"
             android:textStyle="bold"
             android:textColor="@color/black"
             />
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:layout_width="match_parent"
@@ -55,16 +46,18 @@
         android:textSize="25sp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:background="@drawable/curve_corner_button_bg"
         android:backgroundTint="#6AABD2"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="100dp"
+        android:background="@drawable/curve_corner_button_bg"
+        />
     <TextView
         android:textAlignment="center"
         android:textSize="20sp"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/newuser"
         android:text="New User?"
-        android:textColor="#6AABD2"
+        android:textColor="#6AABD2"/>
 
 </LinearLayout>

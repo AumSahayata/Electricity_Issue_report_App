@@ -16,26 +16,32 @@
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
             android:padding="15dp"
+            android:textCursorDrawable="@null"
             android:hint="Mobile Number"
             android:textSize="25sp"
             android:textStyle="bold"
             android:textColorHint="#4C4C4C"
             android:maxLength="10"
+            android:textColorHighlight="#D9D9D9"
             android:textColor="@color/black"
+            android:selectAllOnFocus="true"
             />
         <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
             android:id="@+id/password"
             android:layout_marginTop="20dp"
             android:padding="15dp"
+            android:maxLength="16"
             android:layout_marginHorizontal="20dp"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:textCursorDrawable="@null"
             android:background="@drawable/curve_corner_text_bg"
             android:textSize="25sp"
             android:textColorHint="#4C4C4C"
             android:textStyle="bold"
             android:textColor="@color/black"
+            android:selectAllOnFocus="true"
             />
 
     <Button
@@ -46,7 +52,7 @@
         android:textSize="25sp"
         android:textColor="@color/black"
         android:textStyle="bold"
-        android:backgroundTint="#6AABD2"
+        app:backgroundTint="@null"
         android:layout_marginTop="100dp"
         android:background="@drawable/curve_corner_button_bg"
         />

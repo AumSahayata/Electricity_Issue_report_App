@@ -10,14 +10,46 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="230dp">
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/account_icon"
+            app:backgroundTint="@null"
+            />
+        
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="50dp"
+            android:text="Track Progress"
+            android:textSize="18sp"
+            app:backgroundTint="@null"
+            android:textColor="@color/white"
+            android:background="@drawable/curve_corner_button_bg"
+            />
 
     </LinearLayout>
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="0.5"
+        android:layout_margin="20dp">
 
         <ImageButton
             android:id="@+id/new_rqt"
@@ -27,24 +59,7 @@
             android:scaleType="fitXY"
             android:padding="20dp"
             android:background="@drawable/curve_bg"
-            android:layout_marginEnd="20dp"
             />
-        <ImageButton
-            android:id="@+id/comp_strlit"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/unlitlamp"
-            android:scaleType="fitXY"
-            android:padding="20dp"
-            android:background="@drawable/curve_bg"
-            android:layout_marginStart="20dp"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
 
         <TextView
             android:textColor="@color/black"
@@ -54,25 +69,7 @@
             android:textStyle="bold"
             android:textSize="15sp"
             android:textAlignment="center"
-            android:layout_marginEnd="40dp"/>
-        <TextView
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Complaint regarding \nstreetlights"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="15sp"
-            android:layout_marginStart="40dp"/>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp">
+            android:layout_marginBottom="10dp"/>
 
         <ImageButton
             android:id="@+id/issue"
@@ -82,8 +79,45 @@
             android:scaleType="fitXY"
             android:padding="20dp"
             android:background="@drawable/curve_bg"
-            android:layout_marginEnd="20dp"
             />
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report misuse of\nelectricity"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_weight="0.5"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/comp_strlit"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/unlitlamp"
+            android:scaleType="fitXY"
+            android:padding="20dp"
+            android:background="@drawable/curve_bg"
+            />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complaint regarding \nstreetlights"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:layout_marginBottom="10dp"/>
 
         <ImageButton
             android:id="@+id/noelec"
@@ -93,24 +127,8 @@
             android:scaleType="fitXY"
             android:padding="20dp"
             android:background="@drawable/curve_bg"
-            android:layout_marginStart="20dp"
             />
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-
-        <TextView
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Report misuse of\nelectricity"
-            android:textStyle="bold"
-            android:textSize="15sp"
-            android:textAlignment="center"
-            android:layout_marginEnd="40dp"/>
         <TextView
             android:textColor="@color/black"
             android:layout_width="wrap_content"
@@ -118,9 +136,10 @@
             android:text="Report powercut \nissues"
             android:textStyle="bold"
             android:textSize="15sp"
-            android:textAlignment="center"
-            android:layout_marginStart="40dp"/>
+            android:textAlignment="center" />
 
     </LinearLayout>
+
+</LinearLayout>
 
 </LinearLayout>

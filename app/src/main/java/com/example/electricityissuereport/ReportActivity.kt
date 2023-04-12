@@ -10,16 +10,16 @@ import com.example.electricityissuereport.databinding.ActivityReportBinding
 class ReportActivity : AppCompatActivity() {
     private lateinit var binding: ActivityReportBinding
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         binding = ActivityReportBinding.inflate(layoutInflater)
+        super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
         binding.submit.setOnClickListener {
 
-            Toast.makeText(this,"Your request is successfully submitted.",Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext,"Your request is successfully submitted.",Toast.LENGTH_SHORT).show()
 
-            val intent = Intent(this,ActivityHomeBinding::class.java)
-            startActivity(intent)
+            val submitIntent = Intent(this,HomeActivity::class.java)
+            startActivity(submitIntent)
             finish()
         }
     }

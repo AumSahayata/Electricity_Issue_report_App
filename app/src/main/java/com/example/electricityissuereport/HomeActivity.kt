@@ -33,5 +33,9 @@ class HomeActivity : AppCompatActivity() {
             val profile_page = Intent(this,ProfileActivity::class.java)
             startActivity(profile_page)
         }
+        binding.track.setOnClickListener {
+            val status = Intent(this,StatusActivity::class.java)
+            startActivity(status)
+        }
     }
 }
